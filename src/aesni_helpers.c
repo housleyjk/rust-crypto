@@ -6,7 +6,7 @@
 
 #include <stdint.h>
 
-#if defined(__i386__) || defined(__x86_64__)
+#if defined(__x86_64__)
 
 void rust_crypto_aesni_aesimc(uint8_t* round_keys) {
     asm(
